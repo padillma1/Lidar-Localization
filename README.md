@@ -9,7 +9,8 @@ os-99xxxxxxxxxx-metadata.json
 
 If attempting to use ouster lidar on a new pc for the first time, will first need SDK (software dev. kit), which can be accessed from the following link:
 https://static.ouster.dev/sdk-docs/
-Follow the steps to get necessary files installed for ROS implementation
+
+Follow the steps to get necessary files installed for ROS implementation.
 When roslaunching the lidar in the terminal, use this modified command instead, which specifies the lidar port (crucial) among other things:
 
 roslaunch ouster_ros sensor.launch sensor_hostname:=os-992210001133.local udp_dest:=10.42.1.121 lidar_port:=7502 lidar_mode:=1024x20 timestamp_mode:=TIME_FROM_ROS_TIME
